@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+# vi:ts=4:sts=4:sw=4:et
+
+# Load aliases
+source $HOME/.shell/rc-funcs
+
+# Enable color support of ls
+if [[ -x /usr/bin/dircolors ]]; then
+    eval "$(/usr/bin/dircolors -b)"
+fi
+
+# History size
+HISTSIZE=200000
+
+# Set editor
+export PAGER='less'
+export EDITOR='vim'
+export VISUAL=$EDITOR
+
+# Enable color output for ls
+export CLICOLOR='true'
+
+# Aliases for grep
+alias grep='grep --color=auto --exclude-dir=.svn --exclude-dir=.git'
+alias fgrep='fgrep --color=auto --exclude-dir=.svn --exclude-dir=.git'
+alias egrep='egrep --color=auto --exclude-dir=.svn --exclude-dir=.git'
+
+# Aliases for ls
+if [[ $OSTYPE =~ ^darwin ]]; then
+    alias ls='ls --color=auto'
+else
+    alias ls='ls --color=auto --group-directories-first'
+fi
+alias ll='ls -lAh'
+alias la='ls -A'
+alias lld='ll -d'
+alias lad='la -d'
+
+# Other aliases
+alias vim='vim -p'
+alias less='less -S -i'
+alias tmux="TERM=screen-256color-bce tmux"
+alias mpv='mpv --hwdec=auto'
+alias rsync='rsync -v -e "ssh -q"'
+
+# Aliases for verbose file operations
+alias cp='cp -v'
+alias rm='rm -v'
+alias mv='mv -v'

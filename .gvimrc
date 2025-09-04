@@ -3,6 +3,8 @@ if has('macunix')
 elseif has('unix')
   set guifont=Monospace\ 14
   set clipboard=unnamedplus
+else
+  set guifont=Consolas:h12:cANSI:qDRAFT
 end
 
 " Toolbar item descriptions

@@ -1,0 +1,111 @@
+URxvt.termName: rxvt-256color
+URxvt.saveLines: 32768
+
+! Stuff
+URxvt.bell-command: echo
+
+! Fonts
+#define FIRACODE xft:Fira Code:pixelsize=11
+#define BITVERA xft:Bitstream Vera Sans Mono:pixelsize=12:autohint=true:antialias=true
+#define INCONSOLATA xft:Inconsolata:pixelsize=12
+#define MONOSPACE xft:Monospace:pixelsize=28
+
+! URxvt.font: BITVERA
+! URxvt.boldFont: BITVERA:bold
+! URxvt.italicFont: BITVERA:italic
+! URxvt.boldItalicFont: BITVERA:bold:italic
+
+URxvt.font: MONOSPACE
+URxvt.boldFont: MONOSPACE:bold
+URxvt.italicFont: MONOSPACE:italic
+URxvt.boldItalicFont: MONOSPACE:bold:italic
+
+! Font properties
+!autohint=true
+!antialias=false
+
+! Other fonts
+!URxvt.font: xft:Code2000:antialias=false
+!URxvt.font: -misc-fixed-medium-r-normal--15-140-75-75-c-90-iso10646-1
+!URxvt.font: -xos4-terminus-bold-r-normal--14-140-72-72-c-80-iso8859-15
+
+! Look
+URxvt.letterSpace: -1
+URxvt.lineSpace: -2
+URxvt*scrollBar: false
+URxvt*scrollBar_right: true
+
+! For transparency
+URxvt.depth: 32
+
+! Shortcuts
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+
+! perl extensions
+! URxvt.perl-ext-common: default,remote-clipboard,keyboard-select,resize-font,tabbedex
+URxvt.perl-ext-common: default,remote-clipboard,keyboard-select,resize-font
+
+! Keyboard select
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-c: perl:keyboard-select:activate
+URxvt.keyboard-select.clipboard: true
+
+! Tabbed parameters
+! URxvt.tabbed.autohide: true
+! URxvt.tabbed.new-button: false
+! URxvt.tabbed.tabbar-fg: -2
+! URxvt.tabbed.tabbar-bg: -1
+! URxvt.tabbed.tab-fg: 2
+! URxvt.tabbed.tab-bg: -1
+! URxvt.tabbed.no-tabbedex-keys: yes
+! URxvt.keysym.Shift-Down: perl:tabbedex:new_tab
+! URxvt.keysym.Shift-Up: perl:tabbedex:rename_tab
+! URxvt.keysym.Shift-Right: perl:tabbedex:next_tab
+! URxvt.keysym.Shift-Left: perl:tabbedex:prev_tab
+! URxvt.keysym.Control-Shift-Left: perl:tabbedex:move_tab_left
+! URxvt.keysym.Control-Shift-Right: perl:tabbedex:move_tab_right
+
+! Font resize
+URxvt.keysym.C-minus:     resize-font:smaller
+URxvt.keysym.C-plus:      resize-font:bigger
+URxvt.keysym.C-equal:     resize-font:reset
+!URxvt.keysym.C-question:  resize-font:show
+
+! Colors
+! special
+*.foreground:   #c5c8c6
+! *.background:   [97]#1d1f21
+*.background:   #1d1f21
+*.cursorColor:  #c5c8c6
+
+! black
+*.color0:       #282a2e
+*.color8:       #373b41
+
+! red
+*.color1:       #a54242
+*.color9:       #cc6666
+
+! green
+*.color2:       #8c9440
+*.color10:      #b5bd68
+
+! yellow
+*.color3:       #de935f
+*.color11:      #f0c674
+
+! blue
+*.color4:       #5f819d
+*.color12:      #81a2be
+
+! magenta
+*.color5:       #85678f
+*.color13:      #b294bb
+
+! cyan
+*.color6:       #5e8d87
+*.color14:      #8abeb7
+
+! white
+*.color7:       #707880
+*.color15:      #c5c8c6

@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# vi:ts=4:sts=4:sw=4:et
+
+# color #00 - black
+# color #01 - red
+# color #02 - green
+# color #03 - yellow
+# color #04 - blue
+# color #05 - magenta
+# color #06 - cyan
+# color #07 - white
+# color #08 - black b
+# color #09 - red b
+# color #10 - green b
+# color #11 - yellow b
+# color #12 - blue b
+# color #13 - magenta b
+# color #14 - cyan b
+# color #15 - white b

@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# vi:ts=4:sts=4:sw=4:et
+
+source $HOME/.shell/funcs
+
+# Set umask
+umask 007
+
+# Configure KISS package manager
+export KISS_ROOT=$HOME/kiss
+export KISS_PATH=$HOME/kiss/REPO\
+:$HOME/repo/kiss/repo/extra\
+:$HOME/repo/kiss/repo/core
+
+# Set PATH
+export PATH=$HOME/bin\
+:$KISS_ROOT/usr/bin\
+:$HOME/opt/adb-platform-tools\
+:$PATH
+
+# Load shell-specific settings
+case $(current_shell) in
+    bash) source $HOME/.shell/env.bash ;;
+    zsh)  source $HOME/.shell/env.zsh ;;
+esac

@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+# vi:ts=4:sts=4:sw=4:et
+
+
+function vimfind() {
+    local query='-name'
+    if [[ $1 == -r ]]; then
+        query='-regex'
+        shift
+    fi
+    local where=${2-.}
+    # Find files by grep pattern and open them in vim tabs
+    local files=( $(
+        find $where -type f $query "$1" | sort
+    ) )
+    if [[ -n $files ]]; then
+        vim -p "${files[@]}"
+    fi
+}
+
+
+function vimgrep() {
+    declare -a args
+    if [[ ${#@} -eq 1 ]]; then
+        args=( -sr "$1" . )
+    else
+        args=( "$@" )
+    fi
+    # Find files by grep pattern and open them in vim tabs
+    local files=( $(
+        grep -E -l "${args[@]}"
+    ) )
+    if [[ -n $files ]]; then
+        vim -p "${files[@]}"
+    fi
+}

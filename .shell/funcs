@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# vi:ts=4:sts=4:sw=4:et
+
+
+function _is_terminal() {
+    # Check if terminal configured
+    if tput longname &>/dev/null; then
+        return 0
+    else
+        return 1
+    fi
+}
+
+
+function current_shell() {
+    echo ${ZSH_NAME-${BASH##*/}}
+}

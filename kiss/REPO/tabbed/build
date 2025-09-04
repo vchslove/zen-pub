@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+sed -i 's|^PREFIX = /usr.*$|PREFIX = /usr|g' Makefile
+
+make clean install

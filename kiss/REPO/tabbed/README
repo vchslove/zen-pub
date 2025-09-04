@@ -1,0 +1,25 @@
+tabbed
+________________________________________________________________________________
+
+Simple generic tabbed frontend to xembed-aware applications, originally designed for surf but also usable with many other applications, i.e. st, uzbl, urxvt and xterm
+
+Development
+
+You can browse its source code repository or get a copy using the following command:
+
+git clone https://git.suckless.org/tabbed
+
+[000] Index
+________________________________________________________________________________
+
+* Installation ........................................................... [001]
+
+
+[001] Installation
+________________________________________________________________________________
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|  $ kiss b tabbed                                                             |
+|                                                                              |
++------------------------------------------------------------------------------+
