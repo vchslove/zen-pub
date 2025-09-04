@@ -10,7 +10,8 @@
 source $HOME/.common_env
 
 # Local environment configuration
-source $HOME/.local_env
+
+[[ -f $HOME/.local_env ]] && source $HOME/.local_env
 
 if _is_interactive && _is_terminal; then
     # Common interactive configuration
@@ -28,5 +29,5 @@ if _is_interactive && _is_terminal; then
     source $HOME/.shell/prompt.bash
 
     # Local interactive configuration
-    source $HOME/.local_rc
+    [[ -f $HOME/.local_rc ]] && source $HOME/.local_rc
 fi

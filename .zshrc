@@ -8,7 +8,7 @@
 source $HOME/.common_rc
 
 # Local interactive configuration
-source $HOME/.local_rc
+[[ -f $HOME/.local_rc ]] && source $HOME/.local_rc
 
 # Init auto-completion
 autoload -Uz compinit

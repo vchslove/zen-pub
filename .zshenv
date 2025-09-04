@@ -8,4 +8,4 @@
 source $HOME/.common_env
 
 # Local environment configuration
-source $HOME/.local_env
+[[ -f $HOME/.local_env ]] && source $HOME/.local_env
