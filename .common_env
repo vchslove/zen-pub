@@ -15,7 +15,6 @@ export KISS_PATH=$HOME/kiss/REPO\
 # Set PATH
 export PATH=$HOME/bin\
 :$KISS_ROOT/usr/bin\
-:$HOME/opt/adb-platform-tools\
 :$PATH
 
 # Load shell-specific settings
