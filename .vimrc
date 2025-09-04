@@ -62,7 +62,6 @@ endfun
 call SourceMany([
 \ '.vim/sessions.vim',
 \ '.vim/urls.vim',
-\ '.vim/syntastic.vim',
 \ '.vim/funcs.vim',
 \ '.vim/keymaps.vim',
 \ '.vim/russian.vim',
