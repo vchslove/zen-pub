@@ -7,11 +7,14 @@
 # ------------------------------------------------------------------------------
 
 # Common environment configuration
-source $HOME/.myenv
+source $HOME/.common_env
+
+# Local environment configuration
+source $HOME/.local_env
 
 if _is_interactive && _is_terminal; then
     # Common interactive configuration
-    source $HOME/.myrc
+    source $HOME/.common_rc
 
     # Configure history
     HISTFILESIZE=$HISTSIZE
@@ -23,4 +26,7 @@ if _is_interactive && _is_terminal; then
 
     # Configure prompt
     source $HOME/.shell/prompt.bash
+
+    # Local interactive configuration
+    source $HOME/.local_rc
 fi

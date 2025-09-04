@@ -5,8 +5,10 @@
 # ------------------------------------------------------------------------------
 
 # Common interactive configuration
-# source $HOME/.myenv
-source $HOME/.myrc
+source $HOME/.common_rc
+
+# Local interactive configuration
+source $HOME/.local_rc
 
 # Init auto-completion
 autoload -Uz compinit

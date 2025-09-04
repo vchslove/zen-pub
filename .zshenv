@@ -5,4 +5,7 @@
 # ------------------------------------------------------------------------------
 
 # Common environment configuration
-source $HOME/.myenv
+source $HOME/.common_env
+
+# Local environment configuration
+source $HOME/.local_env
