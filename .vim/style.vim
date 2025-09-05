@@ -1,9 +1,9 @@
 call Source('.vim/theme-desert.vim')
 "call Source('.vim/theme-wildcharm.vim')
 
-if has('gui_running')
-  colorscheme desert
-endif
+" if has('gui_running')
+"   colorscheme desert
+" endif
 
 let s:Aliases = {
 \ 'dark_green':   g:Colors['x022_DarkGreen'],

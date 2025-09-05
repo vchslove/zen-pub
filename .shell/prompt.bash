@@ -5,6 +5,7 @@
 
 function color() {
     [[ -z $1 ]] && return
+    local name result
     local -A colors=(
         [normal]=0
         [bold]=1        [faint]=2
@@ -18,7 +19,11 @@ function color() {
         [cyan]=36       [cyan_b]=96
         [white]=37      [white_b]=97
     )
-    echo -e -n "\e[${colors[$1]}m"
+    for name in "$@"; do
+        result+="${colors[${name}]};"
+    done
+    result=${result%;}
+    echo -e -n "\e[${result}m"
 }
 
 

@@ -63,11 +63,11 @@ call SourceMany([
 \ '.vim/sessions.vim',
 \ '.vim/urls.vim',
 \ '.vim/funcs.vim',
-\ '.vim/keymaps.vim',
 \ '.vim/russian.vim',
 \ '.vim/cursor.vim',
 \ '.vim/colors.vim',
 \ '.vim/style.vim',
+\ '.vim/keymaps.vim',
 \])
 
 " vi:ts=2:sts=2:sw=2:et

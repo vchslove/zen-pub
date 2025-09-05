@@ -10,8 +10,6 @@
 hi clear
 let g:colors_name = 'wildcharm'
 
-let s:t_Co = has('gui_running') ? -1 : (&t_Co ?? 0)
-
 hi! link Terminal Normal
 hi! link StatuslineTerm Statusline
 hi! link StatuslineTermNC StatuslineNC
@@ -173,6 +171,5 @@ else
   \')
 
 endif
-unlet s:t_Co
 
 " vi:ts=2:sts=2:sw=2:et

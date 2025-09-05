@@ -93,17 +93,4 @@ function! TabPrev()
   execute 'tabprev'
 endfun
 
-
-"function! InstallStatusBar()
-"  let basepath = '~/.vim/pack/plugins/start'
-"  let plugpath = basepath . '/lightline'
-"  let url = 'https://github.com/itchyny/lightline.vim'
-"  exec 'silent !mkdir -p ' . basepath
-"  exec 'silent !git clone ' . url . ' ' . plugpath
-"  let &runtimepath .= ',' . plugpath
-"  packloadall!
-"  redraw!
-"  edit %
-"endfunction
-
 " vi:ts=2:sts=2:sw=2:et
